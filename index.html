@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Avanzada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+            background-color: #f4f4f9;
+        }
+        input, button {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Calculadora Avanzada</h1>
+
+<div>
+    <input id="multiplicador" type="number" placeholder="Multiplicador nominal">
+    <input id="ia1Primario" type="number" placeholder="Ia1 Primario">
+    <input id="ia1Secundario" type="number" placeholder="Ia1 Secundario">
+    <input id="ic1Primario" type="number" placeholder="Ic1 Primario">
+    <input id="ic1Secundario" type="number" placeholder="Ic1 Secundario">
+    <input id="ia2Primario" type="number" placeholder="Ia2 Primario">
+    <input id="ia2Secundario" type="number" placeholder="Ia2 Secundario">
+    <input id="ic2Primario" type="number" placeholder="Ic2 Primario">
+    <input id="ic2Secundario" type="number" placeholder="Ic2 Secundario">
+
+    <button onclick="calculate()">Calcular</button>
+    <button onclick="clearFields()">Limpiar Campos</button>
+</div>
+
+<div class="result">
+    <p id="rtcIa1"></p>
+    <p id="errorIa1"></p>
+    <p id="rtcIc1"></p>
+    <p id="errorIc1"></p>
+    <p id="rtcIa2"></p>
+    <p id="errorIa2"></p>
+    <p id="rtcIc2"></p>
+    <p id="errorIc2"></p>
+    <p id="errorProm1"></p>
+    <p id="errorProm2"></p>
+    <p id="multiplicadorEncontrado"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
